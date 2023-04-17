@@ -18,3 +18,31 @@
 		<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
 	</body>
 </html>
+
+2) style
+
+
+body {
+	background: #CCCCCC
+}
+
+#banner {
+	width: 100%;
+}
+
+h1 {
+	text-align: center
+}
+
+p {
+	text-align: center;
+}
+
+#missao {
+	font-size: 20px
+}
+
+em strong {
+	color: #FF0000;
+}
+
