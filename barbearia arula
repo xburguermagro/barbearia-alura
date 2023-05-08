@@ -91,8 +91,6 @@ ul {
 	width: 50%;
 }
 
-3) produto:
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -122,28 +120,32 @@ ul {
 				<li>
 					<h2>Cabelo</h2>
 					<img src="cabelo.jpg">
-					<p class="produto-descrição">Na tesoura ou máquina, como o cliente preferir</p>
-					<p class="produto-preço">R$ 25,00</p>
+					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produto-preco">R$ 25,00</p>
 				</li>
 				<li>
 					<h2>Barba</h2>
-				    <img src="barba.jpg">
-					<p class="produto-descrição">Corte e desenho profissional de barba</p>
-					<p class="produto-preço">R$ 18,00</p>				
-				</li> 
+					<img src="barba.jpg">
+					<p class="produto-descricao">Corte e desenho profissional de barba</p>
+					<p class="produto-preco">R$ 18,00</p>
+				</li>
 				<li>
 					<h2>Cabelo + Barba</h2>
-				    <img src="cabelo+barba.jpg">
-					<p class="produto-descrição">Pacote completo de cabelo e barba</p>
-					<p class="produto-preço">R$ 35,00</p>				
+					<img src="cabelo+barba.jpg">
+					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produto-preco">R$ 35,00</p>
 				</li>
 			</ul>
 		</main>
+
+		<footer>
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
 	</body>
 </html>
 
-4)produto cs:
-
+4)css=
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
@@ -174,6 +176,11 @@ nav a {
 	text-decoration: none;
 }
 
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
 .produtos {
 	width: 940px;
 	margin: 0 auto;
@@ -185,10 +192,23 @@ nav a {
 	text-align: center;
 	width: 30%;
 	vertical-align: top;
-	background: #CCCCCC;
 	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
 }
 
 .produtos h2 {
@@ -200,9 +220,20 @@ nav a {
 	font-size: 18px;
 }
 
-.produto-preço {
+.produto-preco {
 	font-size: 22px;
 	font-weight: bold;
 	margin-top: 10px;
-	
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
 }
